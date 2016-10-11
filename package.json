@@ -4,7 +4,8 @@
   "description": "Get all style files from packages with a style-field in their package.json",
   "main": "dist/index.js",
   "scripts": {
-    "test": "tslint src/**/*.ts"
+    "test": "tslint src/**/*.ts",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [],
   "author": "Dennis Sänger <npm16 (-AT-) mail.ds82.de>",
@@ -13,6 +14,11 @@
   "devDependencies": {
     "@types/node": "4.0.30",
     "tslint": "3.15.1",
-    "typescript": "2.0.3"
+    "typescript": "2.0.3",
+    "semantic-release": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ds82/get-styles-from-packages.git"
   }
 }
