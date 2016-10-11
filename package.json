@@ -1,0 +1,17 @@
+{
+  "name": "get-styles-from-packages",
+  "version": "0.0.0",
+  "description": "Get all style files from packages with a style-field in their package.json",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dennis Sänger <npm16 (-AT-) mail.ds82.de>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "4.0.30",
+    "typescript": "2.0.3"
+  }
+}
