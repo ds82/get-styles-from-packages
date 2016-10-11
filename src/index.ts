@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PACKAGE_JSON = 'package.json';
-interface I_PACKAGE_JSON {
+interface IPackageJson {
   dependencies: string;
 };
 
@@ -21,11 +21,11 @@ function getPackageJson(url: string) {
   return JSON.parse(fs.readFileSync(url));
 }
 
-function getDependencies(pack: I_PACKAGE_JSON) {
+function getDependencies(pack: IPackageJson) {
   return Object.keys(getField('dependencies', pack));
 }
 
-function getField(field: string, pack: I_PACKAGE_JSON) {
+function getField(field: string, pack: IPackageJson) {
   const hasField = (pack && pack.hasOwnProperty && pack.hasOwnProperty(field));
   return hasField ? pack[field] : '';
 }
