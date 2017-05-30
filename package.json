@@ -8,7 +8,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [],
-  "author": "Dennis Sänger <npm16 (-AT-) mail.ds82.de>",
+  "author": "Dennis Sänger <npm16🌀mail.ds82.de>",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
@@ -19,6 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ds82/get-styles-from-packages.git"
-  }
+    "url": "git+https://github.com/ds82/get-styles-from-packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ds82/get-styles-from-packages/issues"
+  },
+  "homepage": "https://github.com/ds82/get-styles-from-packages#readme"
 }
